@@ -1,0 +1,23 @@
+{
+  "name": "wavtools",
+  "version": "0.0.1",
+  "description": "Tools for recording and streaming WAV audio data in the browser across all platforms",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "npx tsc && npx esbuild index.js --bundle --outfile=script/wavtools.js --format=iife && npx esbuild index.js --bundle --minify --outfile=script/wavtools.min.js --format=iife"
+  },
+  "keywords": [
+    "Wavtools",
+    "WAV",
+    "Audio",
+    "Browser"
+  ],
+  "author": "Keith Horwoood <keithwhor@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "typescript": "^5.6.3"
+  }
+}
