@@ -1,6 +1,6 @@
-# Wavetools
+# wavtools
 
-Wavetools is a library for both recording and streaming Waveform Audio (.wav) data
+wavtools is a library for both recording and streaming Waveform Audio (.wav) data
 in the browser. It is intended for managing PCM16 audio streams directly.
 
 This is a fork of open source, MIT licensed tooling initially
@@ -11,24 +11,24 @@ in the browser, and `WavStreamPlayer` for queueing and streaming audio chunks to
 
 ## Installation and usage
 
-To install Wavetools in a Webpack project;
+To install wavtools in a Webpack project;
 
 ```shell
-$ npm i wavetools --save
+$ npm i wavtools --save
 ```
 
 ```javascript
-import { WavRecorder, WavStreamPlayer } from 'wavetools';
+import { WavRecorder, WavStreamPlayer } from 'wavtools';
 
 const wavRecorder = new WavRecorder({ sampleRate: 24000 });
 wavRecorder.getStatus(); // "ended"
 ```
 
-To use as a standalone script, download the [script/wavetools.js](/script/wavetools.js) or
-[script/wavetools.min.js](/script/wavetools.js) files and import them;
+To use as a standalone script, download the [script/wavtools.js](/script/wavtools.js) or
+[script/wavtools.min.js](/script/wavtools.js) files and import them;
 
 ```html
-<script src="/script/wavetools.js"></script>
+<script src="/script/wavtools.js"></script>
 <script>
   // works as part of `window` object
   const wavRecorder = new WavRecorder({ sampleRate: 24000 });
@@ -39,7 +39,7 @@ To use as a standalone script, download the [script/wavetools.js](/script/waveto
 ## WavRecorder Quickstart
 
 ```javascript
-import { WavRecorder } from 'wavetools';
+import { WavRecorder } from 'wavtools';
 
 const wavRecorder = new WavRecorder({ sampleRate: 24000 });
 wavRecorder.getStatus(); // "ended"
@@ -82,7 +82,7 @@ wavRecorder.listenForDeviceChange((deviceList) => {});
 ## WavStreamPlayer Quickstart
 
 ```javascript
-import { WavStreamPlayer } from '/src/lib/wavetools/index.js';
+import { WavStreamPlayer } from '/src/lib/wavtools/index.js';
 
 const wavStreamPlayer = new WavStreamPlayer({ sampleRate: 24000 });
 
