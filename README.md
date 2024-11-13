@@ -107,6 +107,11 @@ trackOffset.offset; // sample number
 trackOffset.currentTime; // time in track
 ```
 
+# Compilation
+
+When modifying the repository, to create appropriate TypeScript types and
+JavaScript bundles, use `npm run compile`.
+
 # Acknowledgements and contact
 
 Thanks to the OpenAI Realtime team! Without their awesome work this library would not

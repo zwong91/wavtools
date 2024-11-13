@@ -1,7 +1,7 @@
 {
   "name": "wavtools",
   "version": "0.0.1",
-  "description": "Tools for recording and streaming WAV audio data in the browser across all platforms",
+  "description": "Recording and stream WAV audio data in the browser across all platforms",
   "main": "index.js",
   "type": "module",
   "scripts": {
