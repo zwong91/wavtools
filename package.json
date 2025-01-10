@@ -1,6 +1,6 @@
 {
   "name": "wavtools-patch",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Record and stream WAV audio data in the browser across all platforms",
   "main": "index.js",
   "types": "./dist/index.d.ts",

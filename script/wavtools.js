@@ -392,6 +392,7 @@ class StreamProcessor extends AudioWorkletProcessor {
       this.port.postMessage({ event: 'stop' });
       return false;
     } else {
+      outputChannelData.fill(0);
       return true;
     }
   }
