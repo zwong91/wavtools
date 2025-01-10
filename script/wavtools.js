@@ -373,6 +373,7 @@ class StreamProcessor extends AudioWorkletProcessor {
     const outputChannelData = output[0];
     const outputBuffers = this.outputBuffers;
     if (this.hasInterrupted) {
+      outputChannelData.fill(0);
       this.port.postMessage({ event: 'stop' });
       return false;
     } else if (outputBuffers.length) {
