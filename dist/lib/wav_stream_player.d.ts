@@ -8,11 +8,12 @@ export class WavStreamPlayer {
      * @param {{sampleRate?: number}} options
      * @returns {WavStreamPlayer}
      */
-    constructor({ sampleRate }?: {
+    constructor({ sampleRate, onStop }?: {
         sampleRate?: number;
     });
     scriptSrc: any;
     sampleRate: number;
+    onStop: any;
     context: any;
     stream: any;
     analyser: any;
@@ -30,7 +31,7 @@ export class WavStreamPlayer {
      * @param {number} [maxDecibels] default -30
      * @returns {import('./analysis/audio_analysis.js').AudioAnalysisOutputType}
      */
-    getFrequencies(analysisType?: "frequency" | "music" | "voice", minDecibels?: number, maxDecibels?: number): import("./analysis/audio_analysis.js").AudioAnalysisOutputType;
+    getFrequencies(analysisType?: "frequency" | "music" | "voice", minDecibels?: number, maxDecibels?: number): import('./analysis/audio_analysis.js').AudioAnalysisOutputType;
     /**
      * Starts audio streaming
      * @private
